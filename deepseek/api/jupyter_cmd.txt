@@ -1,13 +1,8 @@
+conda activate deepseek 
 Start-Job -ScriptBlock {
      cd "C:\Users\sherry\极客时间\AI全栈\第四章\deepseek-quickstart"
      conda activate deepseek
-     jupyter notebook
- } -Name "deepseek"
-
-  Start-Job -ScriptBlock {
-     cd "C:\Users\sherry\极客时间\AI全栈\第四章\deepseek-quickstart"
-     conda activate deepseek
-     jupyter lab --no-browser --port=8888
+     jupyter notebook  --no-browser --port=8888
  } -Name "deepseek"
 
 
