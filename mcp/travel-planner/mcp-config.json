@@ -1,0 +1,20 @@
+{
+  "mcpServers": {
+    "12306-mcp": {
+      "type": "streamable_http",
+      "url": "https://mcp.api-inference.modelscope.net/a7895f9ee59e43/mcp",
+      "description": "12306火车票查询MCP服务器，用于查询高铁班次、票价、时刻表等信息"
+    },
+    "XingYuWeather": {
+      "type": "sse",
+      "url": "https://mcp.api-inference.modelscope.net/362b18ed816b42/sse",
+      "description": "星宇天气MCP服务器，用于查询天气预报、穿衣指南等信息"
+    },
+    "travel-planner": {
+      "command": "python",
+      "args": ["-m", "travel_planner"],
+      "description": "本地旅游规划助手MCP服务器，提供旅游建议和行程规划功能"
+    }
+  },
+  "description": "旅游规划助手MCP配置文件，包含火车票查询、天气查询和旅游规划功能"
+}
