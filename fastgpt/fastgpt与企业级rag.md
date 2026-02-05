@@ -186,6 +186,16 @@ bash <(curl -fsSL https://doc.fastgpt.cn/deploy/install.sh) --region=global --ve
 
 具体步骤（官方文档连接）：
 https://doc.fastgpt.io/docs/introduction/development/intro
+```shell
+# 打包完成之后的命令(基于硅基流动的api)
+docker run -d \
+  -p 3000:3000 \
+  --name fastgpt-app \
+  -v ./data:/app/data \
+  -e OPENAI_BASE_URL=https://api.siliconflow.cn/v1 \
+  -e CHAT_API_KEY=xxx \
+  fastgpt
+```
 ---
 
 
